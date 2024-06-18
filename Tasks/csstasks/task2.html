@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hori-bar {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 1fr;
+            border: 1px solid rgba(169, 169, 169, 0.528);
+            padding: 10px;
+        }
+
+        .hori1 {
+            display: grid;
+            background: grey;
+            border: 1px solid darkblue;
+            padding: 10px;
+            color: blue;
+        }
+
+        .hori2 {
+            background: rgba(169, 169, 169, 0.528);
+            border: 1px solid blue;
+            padding: 10px;
+            color: blue;
+        }
+
+        .vert-bar {
+            display: grid;
+            border: 1px solid black;
+            grid-template-rows: 50px 50px 50px 50px 50px;
+            padding: 10px;
+            width: 200px;
+        }
+
+        .vert1 {
+            border: 1px solid black;
+            background: rgb(255, 132, 0);
+            border: rgb(255, 132, 0);
+            color: white;
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        .vert2 {
+            border: 1px solid black;
+            background: rgb(105, 209, 244);
+            border: rgb(105, 209, 244);
+            color: blue;
+            padding: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Horizontal Navigation Bar</h1>
+    <div class="hori-bar">
+        <div class="hori1">Home</div>
+        <div class="hori2">Java</div>
+        <div class="hori2">HTML</div>
+        <div class="hori2">CSS</div>
+        <div class="hori2"></div>
+    </div>
+
+    <h1>Vertical Navigation Bar</h1>
+    <div class="vert-bar">
+        <div class="vert1">Home</div>
+        <div class="vert2">Java</div>
+        <div class="vert2">HTML</div>
+        <div class="vert2">CSS</div>
+        <div class="vert2">Javascript</div>
+    </div>
+</body>
+
+</html>

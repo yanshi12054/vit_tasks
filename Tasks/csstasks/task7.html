@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(113, 8, 61);
+        }
+
+        .big-box {
+            display: grid;
+            grid-template-rows: 270px 30px;
+            background: rgb(150, 19, 85);
+            height: 400px;
+            width: 400px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+
+        .box {
+            display: grid;
+            grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 60px;
+        }
+
+        .row1,
+        .row2,
+        .row3,
+        .row4,
+        .row5,
+        .row6,
+        .row7,
+        .row8 {
+            padding-left: 20px;
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-box">
+        <div class="box">
+            <div class="row1">
+                <div class="label1">
+                    <label>Name:</label>
+                </div>
+                <div class="input1">
+                    <input placeholder="your name" size="24">
+                </div>
+            </div>
+            <div class="row2">
+                <div class="label2">
+                    <label>Email:</label>
+                </div>
+                <div class="input2">
+                    <input placeholder="your email" size="24">
+                </div>
+            </div>
+            <div class="row3">
+                <div class="label3">
+                    <label>Password:</label>
+                </div>
+                <div class="input3">
+                    <input placeholder="your password" size="24">
+                </div>
+            </div>
+            <div class="row4">
+                <div class="label4">
+                    <label>Phone No:</label>
+                </div>
+                <div class="input4">
+                    <input placeholder="your phone number" size="24">
+                </div>
+            </div>
+            <div class="row5">
+                <div class="label5">
+                    <label>Gender:</label>
+                </div>
+
+                <div class="input5">
+                    <input type="radio">Male
+                    <input type="radio">Female
+                    <input type="radio">Others
+                </div>
+            </div>
+            <div class="row6">
+                <div class="label6">
+                    <label>Language:</label>
+                </div>
+
+                <div class="input6">
+                    <select name="cars" id="cars">
+                        <option value="none">select language</option>
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="tamil">Tamil</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row7">
+                <div class="label7">
+                    <label>Zip Code:</label>
+                </div>
+
+                <div class="input7">
+                    <input type="text" placeholder="your zip code" size="24">
+                </div>
+            </div>
+            <div class="row8">
+                <div class="label8">
+                    <label>About:</label>
+                </div>
+
+                <div class="input8">
+                    <textarea type="text" placeholder="write about yourself..." rows="4" cols="24"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button>Register</button>
+</body>
+
+</html>

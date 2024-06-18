@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            border: 1px solid black;
+            width: 800px;
+            height: 400px;
+        }
+
+        .left {}
+
+        .side-bar {
+            display: grid;
+            background: green;
+            grid-template-rows: 50px 50px 50px 50px;
+            width: 50px;
+            margin-top: 40px;
+        }
+
+        .color1-bar {
+            background: green;
+        }
+
+        .color2-bar {
+            background: blue;
+        }
+
+        .color3-bar {
+            background: red;
+        }
+
+        .color4-bar {
+            background: grey;
+        }
+
+        .right {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">
+            <div class="side-bar">
+                <div class="color1-bar"></div>
+                <div class="color2-bar"></div>
+                <div class="color3-bar"></div>
+                <div class="color4-bar"></div>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Hoverable Sidebar Buttons</h1>
+            <p>Hover over the buttons in the left side navigation to open them.</p>
+        </div>
+    </div>
+</body>
+
+</html>
