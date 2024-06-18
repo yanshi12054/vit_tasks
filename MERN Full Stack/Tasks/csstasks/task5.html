@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            border: 1px solid rgb(179, 86, 102);
+            height: 400px;
+            width: 800px;
+            background: rgb(189, 206, 45)
+        }
+
+        .left {
+            padding-top: 50px;
+            grid-template-columns: 50px 50px 50px 50px;
+
+        }
+
+        .button1 {
+            display: grid;
+            grid-template-columns: 80px 20px;
+            margin-bottom: 20px;
+        }
+
+        .button2 {
+            display: grid;
+            grid-template-columns: 80px 20px;
+            margin-bottom: 20px;
+        }
+
+        .text1,
+        .text2 {
+            padding-left: 5px;
+            background: white;
+        }
+
+        .text1 {
+            color: rgb(159, 17, 124);
+        }
+
+        .black1 {
+            background: black;
+        }
+
+        h1,
+        p {
+            color: rgb(159, 17, 124);
+        }
+
+
+        hr {
+            width: 100%;
+            color: rgb(159, 17, 124);
+            background-color: rgb(159, 17, 124);
+
+        }
+
+        .right {
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">
+            <div class="button1">
+                <div class="text1">Home Page</div>
+                <div class="black1"></div>
+            </div>
+            <div class="button2">
+                <div class="text2">Musings</div>
+                <div class="black1"></div>
+            </div>
+            <div class="button2">
+                <div class="text2">My Town</div>
+                <div class="black1"></div>
+            </div>
+            <div class="button2">
+                <div class="text2">Links</div>
+                <div class="black1"></div>
+            </div>
+        </div>
+        <div class="right">
+            <h1>My First Styled Page</h1>
+            <p>Welcome to my styled page!</p>
+            <p>It lacks images, but taleast it has style. And it has links, even if don't know what yet.</p>
+            <hr>
+            <p>Made 5 April 2004</p>
+            <p>by myself</p>
+        </div>
+    </div>
+</body>
+
+</html>
