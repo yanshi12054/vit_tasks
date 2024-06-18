@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: calc(100% - 120px);
+            /* Width of input minus label width */
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            padding: 4px 4px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="contactForm" onsubmit="return validateForm()">
+        <label for="name">Name <span class="error">*</span></label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email <span class="error">*</span></label>
+        <input type="text" id="email" name="email" required><br>
+
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website"><br>
+
+        <label for="message">Message <span class="error">*</span></label>
+        <textarea id="message" name="message" required></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var message = document.getElementById('message').value.trim();
+
+            if (name === '') {
+                alert('Please enter your name.');
+                return false;
+            }
+
+            if (email === '') {
+                alert('Please enter your email address.');
+                return false;
+            } else if (!isValidEmail(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            if (message === '') {
+                alert('Please enter your message.');
+                return false;
+            }
+
+            return true;
+        }
+
+        function isValidEmail(email) {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+
+</html>

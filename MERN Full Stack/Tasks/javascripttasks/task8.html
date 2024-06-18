@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f6f6f6;
+        }
+
+        .container {
+            background-color: #eb56a3;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .checkbox-group label {
+            margin-right: 15px;
+        }
+
+        button {
+            background-color: #3877e5;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2860b0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="#" method="post" id="registration-form">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" placeholder="Enter First Name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Enter Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password" required>
+            </div>
+            <div class="form-group">
+                <label for="re-password">Re-enter Password</label>
+                <input type="password" name="re-password" id="re-password" placeholder="Re-enter Password" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" placeholder="Enter Age">
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="phone-number" placeholder="Enter Phone Number">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" placeholder="Enter Address"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" name="state" id="state" placeholder="Enter State">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="">Choose your country</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="languages">Languages Known</label>
+                <div class="checkbox-group">
+                    <label for="english">
+                        <input type="checkbox" name="languages[]" id="english" value="english"> English
+                    </label>
+                    <label for="kannada">
+                        <input type="checkbox" name="languages[]" id="kannada" value="kannada"> Kannada
+                    </label>
+                    <label for="hindi">
+                        <input type="checkbox" name="languages[]" id="hindi" value="hindi"> Hindi
+                    </label>
+                    <label for="telugu">
+                        <input type="checkbox" name="languages[]" id="telugu" value="telugu"> Telugu
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="terms" id="terms" required>
+                <label for="terms">I declare all the given details are true</label>
+            </div>
+            <button type="submit" id="submit-btn">REGISTER</button>
+        </form>
+    </div>
+</body>
+
+</html>
